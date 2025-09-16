@@ -1,0 +1,48 @@
+# Build artifacts
+/build/
+/cmake-project/build/
+
+# CMake artifacts
+/CMakeFiles/
+/CMakeCache.txt
+/cmake_install.cmake
+/build.ninja
+
+# Compiled object files, libraries, binaries
+*.o
+*.a
+*.so
+*.dylib
+lnav-cpp-debug-example
+
+# Editor and OS files
+.vscode/
+.idea/
+*.iml
+*.class
+*.log
+*.swp
+*~
+.DS_Store
+
+# Java / Maven
+/java-logging-example/target/
+/java-logging-example/.mvn/
+/java-logging-example/mvnw
+/java-logging-example/mvnw.cmd
+
+# Gradle
+.gradle/
+build/
+
+# Maven local repository settings or logs
+settings.xml
+
+# Test output
+/test-output/
+
+# Logs
+*.log
+
+# Temporary files
+/tmp/
