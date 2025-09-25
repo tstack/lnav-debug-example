@@ -60,7 +60,17 @@ The VSCode window is made up of the following:
   to one that is before or after "Thread-1" will
   change this panel to only show the main thread.
 * The "Breakpoints" panel shows breakpoints that
-  are set on log statements in the code.  Pressing
-  the "Continue" debugger button will move the
+  are set on log statements in the code.
+* The top-right button bar are the debugger controls.
+  Pressing the "Continue" button will move the
   focused log message to the next breakpoint for
-  the current thread.
+  the current thread.  Pressing "Step Over" will move
+  to the next log message in the current thread.
+  Pressing "Step Back" will move to the previous log
+  message in the current thread.  Movements in lnav
+  itself will also be reflected in the source code
+  editor and debug panels.
+
+This screenshot shows lnav embedded into VS Code,
+but you can also run lnav in a terminal and connect
+to it from VS Code.
