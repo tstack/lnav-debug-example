@@ -18,7 +18,10 @@ public class Main {
         Thread th = new Thread(() -> {
             try {
                 logger.info("Background thread started");
-                Thread.sleep(500);
+                for (int arg = 0; arg < args.length; arg++) {
+                    Thread.sleep(100);
+                    logger.info("  Finished with: arg[{}] = {}", arg, args[arg]);
+                }
                 logger.info("Background thread completed work");
             } catch (InterruptedException e) {
                 logger.error("Background thread interrupted", e);
